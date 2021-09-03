@@ -206,6 +206,7 @@ public class UserService {
             user.setImageUrl((String) details.get("picture"));
         }
         user.setActivated(true);
+        user.setLogin(user.getEmail());
         return user;
     }
 
